@@ -1,0 +1,106 @@
+/* Royal Indian Theme */
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    color: #fff;
+}
+
+.royal-container {
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    border: 2px solid #d4af37;
+    box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.quote-box {
+    padding: 30px;
+    position: relative;
+}
+
+.border-design {
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #d4af37, transparent);
+    margin: 20px 0;
+}
+
+.quote-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    line-height: 1.6;
+    color: #f8f8f8;
+    margin: 30px 0;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.quote-author {
+    font-size: 1.3rem;
+    color: #d4af37;
+    font-style: italic;
+    margin-top: 20px;
+}
+
+.royal-btn {
+    padding: 12px 30px;
+    background: linear-gradient(45deg, #d4af37, #f1c40f);
+    color: #1a1a2e;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px auto 0;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
+}
+
+.royal-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(212, 175, 55, 0.6);
+}
+
+.royal-btn img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Decorative Elements */
+.royal-container::before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 150px;
+    height: 150px;
+    background: url('https://cdn-icons-png.flaticon.com/512/3313/3313888.png') no-repeat;
+    background-size: contain;
+    opacity: 0.1;
+    transform: rotate(15deg);
+}
+
+.royal-container::after {
+    content: "";
+    position: absolute;
+    bottom: -50px;
+    left: -50px;
+    width: 150px;
+    height: 150px;
+    background: url('https://cdn-icons-png.flaticon.com/512/3313/3313888.png') no-repeat;
+    background-size: contain;
+    opacity: 0.1;
+    transform: rotate(-15deg);
+}
